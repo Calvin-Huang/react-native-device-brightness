@@ -6,9 +6,10 @@
 //  Copyright © 2017 CapsLock. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <React/RCTBridgeModule.h>
 
-@interface RNDeviceBrightness : NSObject
+@interface RNDeviceBrightness : NSObject <RCTBridgeModule>
 
 @property (nonatomic, assign) float brightnessLevel;
 

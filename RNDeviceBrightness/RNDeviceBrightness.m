@@ -10,6 +10,16 @@
 
 @implementation RNDeviceBrightness
 
+RCT_EXPORT_MODULE();
 
+- (void)setBrightnessLevel:(float)brightnessLevel
+{
+    [UIScreen mainScreen].brightness = brightnessLevel;
+}
+
+- (float)brightnessLevel
+{
+    return [UIScreen mainScreen].brightness;
+}
 
 @end
