@@ -13,6 +13,7 @@
 		189E4F5F1E73E7B200C0D8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 189E4F5E1E73E7B200C0D8E0 /* Assets.xcassets */; };
 		189E4F621E73E7B200C0D8E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189E4F601E73E7B200C0D8E0 /* LaunchScreen.storyboard */; };
 		189E4F6A1E73EFCE00C0D8E0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189E4F691E73EFCE00C0D8E0 /* ViewController.xib */; };
+		189E4F741E73F49C00C0D8E0 /* RNDeviceBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 189E4F731E73F49C00C0D8E0 /* RNDeviceBrightness.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		189E4F611E73E7B200C0D8E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189E4F631E73E7B200C0D8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		189E4F691E73EFCE00C0D8E0 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		189E4F721E73F49C00C0D8E0 /* RNDeviceBrightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNDeviceBrightness.h; path = ../../RNDeviceBrightness.h; sourceTree = "<group>"; };
+		189E4F731E73F49C00C0D8E0 /* RNDeviceBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNDeviceBrightness.m; path = ../../RNDeviceBrightness.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		189E4F6B1E73F03A00C0D8E0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				189E4F721E73F49C00C0D8E0 /* RNDeviceBrightness.h */,
+				189E4F731E73F49C00C0D8E0 /* RNDeviceBrightness.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189E4F741E73F49C00C0D8E0 /* RNDeviceBrightness.m in Sources */,
 				189E4F5A1E73E7B200C0D8E0 /* ViewController.m in Sources */,
 				189E4F571E73E7B200C0D8E0 /* AppDelegate.m in Sources */,
 				189E4F541E73E7B200C0D8E0 /* main.m in Sources */,
