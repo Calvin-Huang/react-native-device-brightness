@@ -11,6 +11,4 @@
 
 @interface RNDeviceBrightness : NSObject <RCTBridgeModule>
 
-@property (nonatomic, assign) float brightnessLevel;
-
 @end
