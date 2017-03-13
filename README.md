@@ -115,6 +115,9 @@ include ':app'
 
 ## Usage
 **Important: Brightness Level only accept value 0 to 1.**
+
+- *Adjusting screen brightness will make iOS's Auto-Brightness function do nothing.*
+- *Adjusting screen brightness in Android only works in App and will reset to system setting exiting App.*
 ```javascript
 // ES5
 var DeviceBrightness = require('react-native-device-brightness');
