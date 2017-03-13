@@ -1,0 +1,21 @@
+{
+  "name": "react-native-device-brightness",
+  "version": "0.0.1-beta.2",
+  "description": "Screen brightness adjustment tool for ReactNative iOS and Android. ",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Calvin-Huang/react-native-device-brightness"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "screen-brightness",
+    "device-brightness",
+    "brightness"
+  ],
+  "author": "Calvin Huang <calvin.peak@capslock.tw> (https://github.com/Calvin-Huang)",
+  "license": "MIT"
+}
