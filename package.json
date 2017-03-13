@@ -1,6 +1,6 @@
 {
   "name": "react-native-device-brightness",
-  "version": "0.0.1-beta.2",
+  "version": "1.0.0",
   "description": "Screen brightness adjustment tool for ReactNative iOS and Android. ",
   "main": "index.js",
   "repository": {
