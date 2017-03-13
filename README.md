@@ -1,6 +1,6 @@
-react-native-devuce-brightness
+react-native-device-brightness
 ===============
-[![npm version](https://badge.fury.io/js/react-native-device-brightness.svg)](http://badge.fury.io/js/react-native-device-brightness)
+[![npm version](https://badge.fury.io/js/react-native-device-brightness.svg)](https://badge.fury.io/js/react-native-device-brightness)
 
 Screen brightness adjustment tool for ReactNative iOS and Android. 
 
