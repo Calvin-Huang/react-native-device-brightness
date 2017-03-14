@@ -35,7 +35,7 @@ rnpm link react-native-device-brightness
 In XCode, in the project navigator:
 - Right click _Libraries_
 - Add Files to _[your project's name]_
-- Go to `node_modules/react-native-device-info`
+- Go to `node_modules/react-native-device-brightness`
 - Add the `.xcodeproj` file
 
 In XCode, in the project navigator, select your project.
@@ -56,7 +56,7 @@ Run your project (Cmd+R)
 dependencies {
     ...
     compile "com.facebook.react:react-native:+"  // From node_modules
-+   compile project(':react-native-device-info')
++   compile project(':react-native-device-brightness')
 }
 ```
 
@@ -65,8 +65,8 @@ dependencies {
 ```diff
 ...
 include ':app'
-+ include ':react-native-device-info'
-+ project(':react-native-device-info').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-device-info/android')
++ include ':react-native-device-brightness'
++ project(':react-native-device-brightness').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-device-brightness/android')
 ```
 
 #### With React Native 0.29+
