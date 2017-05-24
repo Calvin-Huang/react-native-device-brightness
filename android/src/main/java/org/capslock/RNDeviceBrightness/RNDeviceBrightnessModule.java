@@ -6,6 +6,7 @@ package org.capslock.RNDeviceBrightness;
 
 import android.app.Activity;
 import android.view.WindowManager;
+import android.provider.Settings;
 
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -45,7 +46,7 @@ public class RNDeviceBrightnessModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void getSystemBrightnessLevel(Promise promise){
-    String brightness = Settings.System.getString(this.getContentResolver(), "screen_brightness");
+    String brightness = Settings.System.getString(getCurrentActivity().getContentResolver(), "screen_brightness");
     promise.resolve(Integer.parseInt(brightness)/255f);
   }
 }
