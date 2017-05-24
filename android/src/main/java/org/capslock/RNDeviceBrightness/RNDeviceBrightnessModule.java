@@ -46,6 +46,6 @@ public class RNDeviceBrightnessModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void getSystemBrightnessLevel(Promise promise){
     String brightness = Settings.System.getString(this.getContentResolver(), "screen_brightness");
-    promise.resolve(Integer.parseInt(brightness)/255f)
+    promise.resolve(Integer.parseInt(brightness)/255f);
   }
 }
