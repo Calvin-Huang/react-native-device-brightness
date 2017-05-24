@@ -7,7 +7,7 @@ var Platform = require('react-native').Platform;
 
 module.exports = {
   setBrightnessLevel: function(brightnessLevel) {
-    if ((Platform.OS==='android' &&brightnessLevel!==-1)||brightnessLevel < 0 || brightnessLevel > 1) {
+    if (!(Platform.OS==='android' && brightnessLevel===-1)||brightnessLevel < 0 || brightnessLevel > 1) {
       throw Error('⚠️ BrightnessLevel value must betweens 0 to 1 ⚠️');
     }
 
