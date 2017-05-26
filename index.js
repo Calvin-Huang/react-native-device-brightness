@@ -21,6 +21,6 @@ module.exports = {
     if(Platform.OS!=='android'){
         throw Error('⚠️ android only supported ⚠️');
     }
-    RNDeviceBrightness.getSystemBrightnessLevel();
+    return RNDeviceBrightness.getSystemBrightnessLevel();
   }
 };

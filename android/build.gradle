@@ -13,12 +13,8 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
-    lintOptions {
-       warning 'InvalidPackage'
-    }
 }
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
-    compile 'com.google.android.gms:play-services-gcm:+'
 }
