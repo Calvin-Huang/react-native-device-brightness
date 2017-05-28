@@ -126,7 +126,14 @@ var DeviceBrightness = require('react-native-device-brightness');
 
 // It will throw a exception when value less than 0 or more than 1.
 DeviceBrightness.setBrightnessLevel(luminous);
-DeviceBrightness.getBrightnessLebel()
+DeviceBrightness.getBrightnessLevel()
+    .then(function (luminous) {
+        // Get current brightness level
+        // 0 ~ 1
+        console.log(luminous);
+    });
+//android only
+DeviceBrightness.getSystemBrightnessLevel()
     .then(function (luminous) {
         // Get current brightness level
         // 0 ~ 1
