@@ -8,7 +8,7 @@ var Platform = require('react-native').Platform;
 module.exports = {
   setBrightnessLevel: function(brightnessLevel) {
     if (brightnessLevel < 0 || brightnessLevel > 1) {
-      if(!(Platform.OS === 'android' && brightnessLevel===-1)) {
+      if (!(Platform.OS === 'android' && brightnessLevel === -1)) {
           throw Error('⚠️ BrightnessLevel value must betweens 0 to 1 ⚠️');
       }
     }
@@ -18,7 +18,7 @@ module.exports = {
   getBrightnessLevel: RNDeviceBrightness.getBrightnessLevel,
 
   getSystemBrightnessLevel: function () {
-    if(Platform.OS!=='android'){
+    if (Platform.OS !== 'android') {
         throw Error('⚠️ android only supported ⚠️');
     }
     return RNDeviceBrightness.getSystemBrightnessLevel();
