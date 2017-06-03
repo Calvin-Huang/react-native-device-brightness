@@ -132,7 +132,7 @@ DeviceBrightness.getBrightnessLevel()
         // 0 ~ 1
         console.log(luminous);
     });
-//android only
+// Android only
 DeviceBrightness.getSystemBrightnessLevel()
     .then(function (luminous) {
         // Get current brightness level
