@@ -9,12 +9,12 @@ Screen brightness adjustment tool for ReactNative iOS and Android.
 npm install --save react-native-device-brightness
 ```
 
-*Recommened via yarn*
+*Recommended via yarn*
 ```
 yarn add react-native-device-brightness
 ```
 
-## Automaticaly link
+## Automatically link
 
 ### With React Native 0.27+
 ```
