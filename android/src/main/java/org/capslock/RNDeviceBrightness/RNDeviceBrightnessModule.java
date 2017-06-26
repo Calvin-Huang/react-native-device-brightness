@@ -28,7 +28,10 @@ public class RNDeviceBrightnessModule extends ReactContextBaseJavaModule {
   @ReactMethod
   public void setBrightnessLevel(final float brightnessLevel) {
     final Activity activity = getCurrentActivity();
-    if(activity==null)return;
+    if (activity == null) {
+      return;
+    }
+    
     activity.runOnUiThread(new Runnable() {
       @Override
       public void run() {
