@@ -16,7 +16,7 @@ import java.util.List;
 
 public class RNDeviceBrightness implements ReactPackage {
 
-  @Override
+  // Deprecated in RN 0.47 - facebook/react-native@ce6fb33
   public List<Class<? extends JavaScriptModule>> createJSModules() {
     return Collections.emptyList();
   }
