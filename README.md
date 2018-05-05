@@ -48,6 +48,31 @@ Run your project (Cmd+R)
 
 (Thanks to @brysgo for writing the instructions)
 
+### iOS (with CocoaPods)
+In your `ios/Podfile` make sure to use `RNDeviceBrightness` from the local
+`node_modules/`. With that, only your project Pod needs to be linked and
+no extra configuration is required:
+
+```ruby
+target 'MyReactApp' do
+  # Make sure you're also using React-Native from ../node_modules
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTActionSheet',
+	# ... whatever else you use
+  ]
+  # React-Native dependencies such as yoga:
+  pod 'yoga', path: '../node_modules/react-native/ReactCommon/yoga'
+
+  # The following line uses RNDeviceBrightness, linking with
+  # the library and setting the Header Search Paths for you
+  pod 'RNDeviceBrightness', :path => '../node_modules/react-native-device-brightness'
+end
+```
+
+Remember to run `cd ios && pod install` to update files used by Xcode.
+
+
 ### Android
 
 - in `android/app/build.gradle`:
