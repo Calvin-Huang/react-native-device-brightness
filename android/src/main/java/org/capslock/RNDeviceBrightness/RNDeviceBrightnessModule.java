@@ -46,7 +46,8 @@ public class RNDeviceBrightnessModule extends ReactContextBaseJavaModule {
   public void getBrightnessLevel(Promise promise) {
     final Activity activity = getCurrentActivity();
     if (activity == null) {
-      return promise.reject("Activity not found");
+      promise.reject("Activity not found");
+      return;
     }
 
     WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
