@@ -31,7 +31,7 @@ public class RNDeviceBrightnessModule extends ReactContextBaseJavaModule {
     if (activity == null) {
       return;
     }
-    
+
     activity.runOnUiThread(new Runnable() {
       @Override
       public void run() {
@@ -44,7 +44,13 @@ public class RNDeviceBrightnessModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void getBrightnessLevel(Promise promise) {
-    WindowManager.LayoutParams lp = getCurrentActivity().getWindow().getAttributes();
+    final Activity activity = getCurrentActivity();
+    if (activity == null) {
+      promise.reject("Activity not found");
+      return;
+    }
+
+    WindowManager.LayoutParams lp = activity.getWindow().getAttributes();
     promise.resolve(lp.screenBrightness);
   }
 
