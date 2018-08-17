@@ -74,7 +74,7 @@ include ':app'
 - in `MainApplication.java`:
 
 ```diff
-+ import com.learnium.RNDeviceInfo.RNDeviceInfo;
++ import org.capslock.RNDeviceBrightness.RNDeviceBrightness;
 
   public class MainApplication extends Application implements ReactApplication {
     //......
@@ -82,7 +82,7 @@ include ':app'
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-+         new RNDeviceInfo(),
++         new RNDeviceBrightness(),
           new MainReactPackage()
       );
     }
@@ -96,7 +96,7 @@ include ':app'
 - in `MainActivity.java`:
 
 ```diff
-+ import com.learnium.RNDeviceInfo.RNDeviceInfo;
++ import org.capslock.RNDeviceBrightness.RNDeviceBrightness;
 
   public class MainActivity extends ReactActivity {
     ......
@@ -104,7 +104,7 @@ include ':app'
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-+       new RNDeviceInfo(),
++       new RNDeviceBrightness(),
         new MainReactPackage()
       );
     }
