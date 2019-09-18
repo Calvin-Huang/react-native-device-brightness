@@ -1,33 +1,50 @@
-react-native-device-brightness
-===============
+# React Native Device Brightness - screen brightness adjustment tool for ReactNative
+
 [![npm version](https://badge.fury.io/js/react-native-device-brightness.svg)](https://badge.fury.io/js/react-native-device-brightness)
 
-Screen brightness adjustment tool for ReactNative iOS and Android. 
 
-## Installation
+## Platforms Supported
+
+- [x] iOS
+- [x] Android
+
+## Getting Started
+
+### Install
+
 ```
-npm install --save react-native-device-brightness
+$ yarn add react-native-device-brightness
+```
+ (or)
+ 
+ For npm use
+```
+$ npm install --save react-native-device-brightness
 ```
 
-*Recommended via yarn*
-```
-yarn add react-native-device-brightness
-```
+### Automatic Link
 
-## Automatically link
+- **React Native 0.60+** (skip this as auto-linking should work)
 
-### With React Native 0.27+
-```
-react-native link react-native-device-brightness
-```
+  [CLI autolink feature](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md) links the module while building the app.
 
+  Note For iOS using cocoapods, run:
+  ```
+  $ cd ios/ && pod install
+  ```
 
-### With older versions of React Native
-You need [rnpm](https://github.com/rnpm/rnpm) (npm install -g rnpm)
-```
-rnpm link react-native-device-brightness
-```
-*Hey, bro! react-native-device-brightness wasn't support older version of React Native yet.*
+- **React Native <= 0.59**
+  ```
+  react-native link react-native-device-brightness
+  ```
+
+- **With older versions of React Native <0.27**
+
+  You need [rnpm](https://github.com/rnpm/rnpm) (npm install -g rnpm)
+  ```
+  rnpm link react-native-device-brightness
+  ```
+  *Hey, bro! react-native-device-brightness wasn't support older version of React Native yet.*
 
 ## Manually link
 
@@ -118,11 +135,12 @@ include ':app'
 
 - *Adjusting screen brightness will make iOS's Auto-Brightness function do nothing.*
 - *Adjusting screen brightness in Android only works in App and will reset to system setting exiting App.*
+
 ```javascript
-// ES5
-var DeviceBrightness = require('react-native-device-brightness');
-// or ES6
-// import DeviceBrightness from 'react-native-device-brightness';
+  // ES5
+  var DeviceBrightness = require('react-native-device-brightness');
+  // or ES6
+  // import DeviceBrightness from 'react-native-device-brightness';
 
 // It will throw a exception when value less than 0 or more than 1.
 DeviceBrightness.setBrightnessLevel(luminous);
