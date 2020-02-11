@@ -29,12 +29,14 @@ This module supports auto-linking for React Native version 0.60 and above. No ad
 ```javascript
 import DeviceBrightness from 'react-native-device-brightness';
 
-// It will throw a exception when value less than 0 or more than 1.
-DeviceBrightness.setBrightnessLevel(luminous);
+// Setting brightness
+DeviceBrightness.setBrightnessLevel(brightness);
+
+// Getting brightness
 const brightness = await DeviceBrightness.getBrightnessLevel();
 console.log(brightness);
 
-// Android only
+// Getting system brightness (Android only)
 const brightness = await DeviceBrightness.getSystemBrightnessLevel();
 console.log(brightness);
 ```
