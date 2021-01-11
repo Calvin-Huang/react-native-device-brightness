@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.4
+
+- Chore: Update devDependencies
+
 ## 1.2.3
 
 - Fix Android build warnings
