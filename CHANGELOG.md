@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.2.5
+- Update gradle for React Native 0.64+ compatiabiility
+- Update devDependencies
+
 ## 1.2.4
 
 - Chore: Update devDependencies
