@@ -1,7 +1,13 @@
 # Change Log
 
+## 1.2.6
+
+- Convert to Typescript
+- Update gradle for React Native 0.68+ compatibility
+
 ## 1.2.5
-- Update gradle for React Native 0.64+ compatiabiility
+
+- Update gradle for React Native 0.64+ compatibility
 - Update devDependencies
 
 ## 1.2.4
