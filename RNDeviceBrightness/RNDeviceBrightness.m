@@ -14,7 +14,9 @@ RCT_EXPORT_MODULE()
 
 RCT_EXPORT_METHOD(setBrightnessLevel:(float)brightnessLevel)
 {
-    [UIScreen mainScreen].brightness = brightnessLevel;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [UIScreen mainScreen].brightness = brightnessLevel;
+    });
 }
 
 RCT_REMAP_METHOD(getBrightnessLevel,

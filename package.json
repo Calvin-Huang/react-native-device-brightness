@@ -1,14 +1,13 @@
 {
-  "name": "react-native-device-brightness",
-  "version": "1.2.0",
-  "description": "Screen brightness adjustment tool for ReactNative iOS and Android. ",
-  "main": "index.js",
+  "name": "@adrianso/react-native-device-brightness",
+  "version": "1.2.7",
+  "description": "Screen brightness adjustment tool for React Native",
+  "homepage": "https://github.com/adrianso/react-native-device-brightness#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Calvin-Huang/react-native-device-brightness"
+    "url": "https://github.com/adrianso/react-native-device-brightness"
   },
   "keywords": [
-    "react-component",
     "react-native",
     "ios",
     "android",
@@ -16,15 +15,19 @@
     "device-brightness",
     "brightness"
   ],
-  "author": "Calvin Huang <calvin.peak@capslock.tw> (https://github.com/Calvin-Huang)",
+  "author": "Adrian So <adrian@sld.co.nz> (https://github.com/adrianso)",
   "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "lint": "eslint '**/*.{ts,tsx}'"
+  },
   "devDependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^15.0.1",
-    "eslint-config-airbnb-es5": "^1.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^5.0.1",
-    "eslint-plugin-react": "^7.0.1"
+    "@types/react-native": "^0.71.0",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "typescript": "^4.9.4"
   }
 }
